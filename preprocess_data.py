@@ -54,7 +54,7 @@ def preprocess(dataset_name, processed_folder):
                     writer = csv.writer(file)
                     writer.writerow([wav_filename, wav_filesize, transcript])
 
-    os.remove(processed_folder + "/" + filebase + ".wav")
+        os.remove(processed_folder + "/" + filebase + ".wav")
 
 
 preprocess("train", "processed_train")
